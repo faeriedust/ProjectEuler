@@ -11,7 +11,7 @@ namespace Problem73.Answer {
         .Sum();
 
     public static long CountFractionsInRangeWithSpecificDenominator(long denominator) =>
-      EulerEnumerable.RangeFromTo(denominator.DivideByRoundUp(3), denominator.DivideByRoundDown(2))
+      EulerEnumerable.RangeFromTo(denominator.DivideByRoundDown(3) + 1, denominator.DivideByRoundUp(2) - 1)
         .Select(numerator => EulerFraction.Create(numerator, denominator))
         .Where(fraction => fraction.IsReduced())
         .Count();
