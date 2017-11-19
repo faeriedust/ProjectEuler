@@ -9,7 +9,7 @@ namespace ProjectEuler.Core {
     }
 
     public static IEnumerable<long> RangeFromTo(long from, long to) {
-      while(from < to) {
+      while(from <= to) {
         yield return from++;
       }
     }
