@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problem1", "Problem1", "{5BB1A000-BD37-4E49-B090-020CC9291314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1.Tests", "problems\Problem1.Tests\Problem1.Tests.csproj", "{F239E415-AD38-4F3C-808C-80B0ED43B9E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "problems", "problems", "{8E9DC8F6-AE67-4098-95E6-C60F8E6FA7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1.ConsoleApp", "problems\Problem1.ConsoleApp\Problem1.ConsoleApp.csproj", "{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem1.Solution", "problems\Problem1.Solution\Problem1.Solution.csproj", "{B2C786D1-2A1A-46C8-971F-B439AD38AD44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{68289763-8F7A-4DAB-BA1C-BA4332E939CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{E289956E-3270-4C70-A450-6DD711FB361B}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Core", "libs\ProjectEuler.Core\ProjectEuler.Core.csproj", "{1A8C0C13-3466-40FD-828D-307603F3CF4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F239E415-AD38-4F3C-808C-80B0ED43B9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F239E415-AD38-4F3C-808C-80B0ED43B9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F239E415-AD38-4F3C-808C-80B0ED43B9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F239E415-AD38-4F3C-808C-80B0ED43B9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C786D1-2A1A-46C8-971F-B439AD38AD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C786D1-2A1A-46C8-971F-B439AD38AD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C786D1-2A1A-46C8-971F-B439AD38AD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C786D1-2A1A-46C8-971F-B439AD38AD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8C0C13-3466-40FD-828D-307603F3CF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8C0C13-3466-40FD-828D-307603F3CF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8C0C13-3466-40FD-828D-307603F3CF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8C0C13-3466-40FD-828D-307603F3CF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BB1A000-BD37-4E49-B090-020CC9291314} = {8E9DC8F6-AE67-4098-95E6-C60F8E6FA7E1}
+		{F239E415-AD38-4F3C-808C-80B0ED43B9E3} = {5BB1A000-BD37-4E49-B090-020CC9291314}
+		{317E76D6-6CE3-4D3A-80DA-EF0544BEBB09} = {5BB1A000-BD37-4E49-B090-020CC9291314}
+		{B2C786D1-2A1A-46C8-971F-B439AD38AD44} = {5BB1A000-BD37-4E49-B090-020CC9291314}
+		{1A8C0C13-3466-40FD-828D-307603F3CF4A} = {68289763-8F7A-4DAB-BA1C-BA4332E939CF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C483EA7C-FD37-466D-A449-3BD27B12B53A}
+	EndGlobalSection
+EndGlobal
