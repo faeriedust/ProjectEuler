@@ -1,4 +1,5 @@
 ﻿using ProjectEuler.Core;
+using ProjectEuler.Core.Fractions;
 using System.Linq;
 
 namespace Problem73.Answer {
@@ -11,7 +12,8 @@ namespace Problem73.Answer {
 
     public static long CountFractionsInRangeWithSpecificDenominator(long denominator) =>
       EulerEnumerable.RangeFromTo(denominator.DivideByRoundUp(3), denominator.DivideByRoundDown(2))
-        .Where(numerator => EulerMathHelpers.FindHighestCommonFactor(numerator, denominator) == 1)
+        .Select(numerator => EulerFraction.Create(numerator, denominator))
+        .Where(fraction => fraction.IsReduced())
         .Count();
   }
 }
