@@ -8,8 +8,5 @@
 
     public static bool IsReduced(this EulerFraction fraction) =>
       EulerMathHelpers.FindHighestCommonFactor(fraction.Numerator, fraction.Denominator) == 1;
-
-    public static double ToDouble(this EulerFraction fraction) =>
-      (double)fraction.Numerator / fraction.Denominator;
   }
 }
