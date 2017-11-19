@@ -10,8 +10,8 @@ namespace Problem73.Answer {
         .Sum();
 
     public static long CountFractionsInRangeWithSpecificDenominator(long denominator) =>
-      EulerEnumerable.RangeFromTo(denominator / 2, denominator / 3)
-        .Where(numerator => MathHelpers.FindHighestCommonFactor(numerator, denominator) == 1)
+      EulerEnumerable.RangeFromTo(denominator / 3, denominator / 2)
+        .Where(numerator => EulerMathHelpers.FindHighestCommonFactor(numerator, denominator) == 1)
         .Count();
   }
 }

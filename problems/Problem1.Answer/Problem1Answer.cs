@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ProjectEuler.Core;
 
 namespace Problem1.Answer {
   public static class Problem1Answer {
@@ -6,13 +6,10 @@ namespace Problem1.Answer {
       Problem1Answer.SumArithmeticRange(1, cap - 1, 3)
        + Problem1Answer.SumArithmeticRange(1, cap - 1, 5)
        - Problem1Answer.SumArithmeticRange(1, cap - 1, 15);
-    //EulerEnumerable.Range(0, cap)
-    //  .Where(i => i % 3 == 0 || i % 5 == 0)
-    //  .Sum();
 
     public static long SumArithmeticRange(long min, long max, long step) {
-      var first = Math.Ceiling((double)min / step) * step;
-      var last = Math.Floor((double)max / step) * step;
+      var first = EulerMathHelpers.FindNearestMultipleBoundedBelowBy(step, min);
+      var last = EulerMathHelpers.FindNearestMultipleBoundedAboveBy(step, max);
 
       var count = ((last - first) / step) + 1;
 

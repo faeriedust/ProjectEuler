@@ -5,7 +5,7 @@ using System.Linq;
 using Xunit;
 
 namespace ProjectEuler.Core.Tests.UnitTesting {
-  public class EulerFractionReductionTests {
+  public class FractionReductionTests {
     [Theory, MemberData(nameof(EulerFractionReductionTestData))]
     public void ReduceEulerFraction(EulerFraction input, EulerFraction reduced) =>
       Assert.Equal(reduced, input.Reduce());

@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace ProjectEuler.Core {
-  public static class MathHelpers {
+  public static class EulerMathHelpers {
     public static long FindHighestCommonFactor(long a, long b) {
 
       long findHCF(long smaller, long larger) {
@@ -15,5 +15,12 @@ namespace ProjectEuler.Core {
       }
       return findHCF(Math.Min(a, b), Math.Max(a, b));
     }
+
+    public static long FindNearestMultipleBoundedBelowBy(long step, long target) =>
+      (long)Math.Ceiling((double)target / step) * step;
+
+    public static long FindNearestMultipleBoundedAboveBy(long step, long target) =>
+      (long)Math.Floor((double)target / step) * step;
+
   }
 }
