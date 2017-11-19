@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Problem73_CountFractionsInRangeWithMaxDenominatorTests.cs" />
+    <None Include="Problem73_MaxDenominatorTests.cs" />
   </ItemGroup>
   
 

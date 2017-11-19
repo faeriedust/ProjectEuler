@@ -4,7 +4,7 @@ using System.Linq;
 using Xunit;
 
 namespace Problem1.Tests {
-  public class Problem73_CountFractionsInRangeWithMaxDenominatorTests {
+  public class Problem73_MaxDenominatorTests {
     [Theory, MemberData(nameof(TestData))]
     public void CountFractionsInRange(long maxDenominator, long expectedFractionCount) =>
       Assert.Equal(expectedFractionCount, Problem73Answer.CountFractionsInRangeWithMaxDenominator(maxDenominator));

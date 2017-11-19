@@ -4,10 +4,10 @@ using System.Linq;
 using Xunit;
 
 namespace Problem1.Tests {
-  public class Problem73_CountFractionsInRangeWithDenominatorTests {
+  public class Problem73_SpecificDenominatorTests {
     [Theory, MemberData(nameof(TestData))]
     public void CountFractionsInRange(long denominator, long expectedFractionCount) =>
-      Assert.Equal(expectedFractionCount, Problem73Answer.CountFractionsInRangeWithMaxDenominator(denominator));
+      Assert.Equal(expectedFractionCount, Problem73Answer.CountFractionsInRangeWithDenominator(denominator));
 
     public static IEnumerable<object[]> TestData() =>
       _TestData_Raw().Select(x => new object[] { x.Denominator, x.CountedFractions });
