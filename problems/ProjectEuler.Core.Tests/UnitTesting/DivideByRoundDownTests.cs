@@ -15,6 +15,7 @@ namespace ProjectEuler.Core.Tests.UnitTesting {
 
 
     private static IEnumerable<(long Numerator, long Denominator, long Quotient)> _TestData_Raw() {
+      yield return (5, 2, 2);
       yield return (5, 3, 1);
       yield return (6, 3, 2);
     }
