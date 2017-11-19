@@ -5,13 +5,12 @@ namespace ProjectEuler.Core {
     public static long FindHighestCommonFactor(long a, long b) {
 
       long findHCF(long smaller, long larger) {
-        var quotient = larger / smaller;
-        var remainder = larger - (quotient * smaller);
+        var remainder = larger - ((larger / smaller) * smaller);
 
         if(remainder == 0) {
-          return quotient;
+          return smaller;
         } else {
-          return findHCF(quotient, remainder);
+          return findHCF(remainder, smaller);
         }
       }
       return findHCF(Math.Min(a, b), Math.Max(a, b));
