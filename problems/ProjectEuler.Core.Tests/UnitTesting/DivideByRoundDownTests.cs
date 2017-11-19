@@ -3,9 +3,9 @@ using System.Linq;
 using Xunit;
 
 namespace ProjectEuler.Core.Tests.UnitTesting {
-  public class DivideByRoundUpTests {
+  public class DivideByRoundDownTests {
     [Theory, MemberData(nameof(TestData))]
-    public void DivideByRoundUp(long numerator, long denominator, long expectedResult) =>
+    public void DivideByRoundDown(long numerator, long denominator, long expectedResult) =>
       Assert.Equal(expectedResult, numerator.DivideByRoundUp(denominator));
 
     public static IEnumerable<object[]> TestData() =>
@@ -15,7 +15,7 @@ namespace ProjectEuler.Core.Tests.UnitTesting {
 
 
     private static IEnumerable<(long Numerator, long Denominator, long Quotient)> _TestData_Raw() {
-      yield return (5, 3, 2);
+      yield return (5, 3, 1);
       yield return (6, 3, 2);
     }
   }
