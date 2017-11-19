@@ -13,7 +13,7 @@ namespace Problem1.Answer {
 
       var count = ((last - first) / step) + 1;
 
-      return (long)(((first + last) / 2) * count);
+      return (first + last) * count / 2;
     }
   }
 }

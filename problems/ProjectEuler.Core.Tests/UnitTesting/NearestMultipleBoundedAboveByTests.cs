@@ -20,6 +20,7 @@ namespace ProjectEuler.Core.Tests.UnitTesting {
     private static IEnumerable<(long Step, long UpperBound, long Nearest)> _TestData_Raw() {
       yield return (1, 100, 100);
       yield return (3, 100, 99);
+      yield return (5, 100, 100);
     }
   }
 }
