@@ -6,9 +6,9 @@ namespace ProjectEuler.Core.Tests.UnitTesting {
   public class HighestCommonFactorTests {
     [Theory, MemberData(nameof(HCFTestData))]
     public void FindHCF(long a, long b, long hcf) {
-      var actualHcf = MathHelpers.FindHighestCommonFactor(a, b);
+      var actualHCF = MathHelpers.FindHighestCommonFactor(a, b);
 
-      Assert.Equal(hcf, actualHcf);
+      Assert.Equal(hcf, actualHCF);
     }
 
     public static IEnumerable<object[]> HCFTestData() =>
