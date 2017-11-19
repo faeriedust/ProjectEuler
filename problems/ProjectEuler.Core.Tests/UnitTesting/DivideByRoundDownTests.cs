@@ -6,7 +6,7 @@ namespace ProjectEuler.Core.Tests.UnitTesting {
   public class DivideByRoundDownTests {
     [Theory, MemberData(nameof(TestData))]
     public void DivideByRoundDown(long numerator, long denominator, long expectedResult) =>
-      Assert.Equal(expectedResult, numerator.DivideByRoundUp(denominator));
+      Assert.Equal(expectedResult, numerator.DivideByRoundDown(denominator));
 
     public static IEnumerable<object[]> TestData() =>
       _TestData_Raw()
