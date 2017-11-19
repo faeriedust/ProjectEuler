@@ -1,5 +1,5 @@
 ﻿namespace ProjectEuler.Core.Fractions {
-  public class EulerFraction {
+  public struct EulerFraction {
     private EulerFraction(long numerator, long denominator) {
       this.Numerator = numerator;
       this.Denominator = denominator;
