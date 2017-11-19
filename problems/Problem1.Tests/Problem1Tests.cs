@@ -1,14 +1,21 @@
 ﻿using Problem1.Answer;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace Problem1.Tests {
   public class Problem1Tests {
-    [Fact]
-    public void Problem1_SumOfMultiplesOfThreeOrFiveLessThan10_Is23() =>
-      Assert.Equal(23, Problem1Answer.SumMultiplesOfThreeOrFiveLessThan(10));
+    [Theory]
+    public void SumMultiplesOfThreeOrFiveBelow(long cap, long expectedSum) =>
+      Assert.Equal(expectedSum, Problem1Answer.SumMultiplesOfThreeOrFiveLessThan(cap));
 
-    [Fact]
-    public void Problem1_SumOfMultiplesOfThreeOrFiveLessThan1000_Is233168() =>
-      Assert.Equal(233168, Problem1Answer.SumMultiplesOfThreeOrFiveLessThan(1000));
+    public static IEnumerable<object[]> TestData() =>
+      _TestData_Raw().Select(x => new object[] { x.Cap, x.Sum });
+
+    private static IEnumerable<(long Cap, long Sum)> _TestData_Raw() {
+      yield return (10, 23);
+      yield return (1000, 233168);
+    }
+
   }
 }
