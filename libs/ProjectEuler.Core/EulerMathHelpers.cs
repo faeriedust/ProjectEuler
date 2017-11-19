@@ -10,10 +10,10 @@ namespace ProjectEuler.Core {
         if(remainder == 0) {
           return smaller;
         } else {
-          return findHCF(remainder, smaller);
+          return findHCF(smaller: remainder, larger: smaller);
         }
       }
-      return findHCF(Math.Min(a, b), Math.Max(a, b));
+      return findHCF(smaller: Math.Min(a, b), larger: Math.Max(a, b));
     }
 
     public static long DivideByRoundUp(this long numerator, long denominator) {
