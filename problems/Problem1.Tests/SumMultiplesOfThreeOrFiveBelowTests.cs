@@ -4,7 +4,7 @@ using System.Linq;
 using Xunit;
 
 namespace Problem1.Tests {
-  public class Problem1Tests {
+  public class SumMultiplesOfThreeOrFiveBelowTests {
     [Theory, MemberData(nameof(TestData))]
     public void SumMultiplesOfThreeOrFiveBelow(long cap, long expectedSum) =>
       Assert.Equal(expectedSum, Problem1Answer.SumMultiplesOfThreeOrFiveLessThan(cap));
