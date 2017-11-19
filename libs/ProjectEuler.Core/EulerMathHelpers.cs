@@ -16,11 +16,21 @@ namespace ProjectEuler.Core {
       return findHCF(Math.Min(a, b), Math.Max(a, b));
     }
 
+    public static long DivideByRoundUp(this long numerator, long denominator) {
+      var quotient = numerator / denominator;
+      if(quotient * denominator < numerator) {
+        quotient++;
+      }
+      return quotient;
+    }
+    public static long DivideByRoundDown(this long numerator, long denominator) =>
+      numerator / denominator;
+
     public static long FindNearestMultipleBoundedBelowBy(long step, long target) =>
-      (long)Math.Ceiling((double)target / step) * step;
+      target.DivideByRoundUp(step) * step;
 
     public static long FindNearestMultipleBoundedAboveBy(long step, long target) =>
-      (long)Math.Floor((double)target / step) * step;
+      target.DivideByRoundDown(step) * step;
 
   }
 }

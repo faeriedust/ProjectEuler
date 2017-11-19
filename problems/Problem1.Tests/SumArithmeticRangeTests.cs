@@ -7,7 +7,7 @@ namespace Problem1.Tests {
   public class SumArithmeticRangeTests {
     [Theory, MemberData(nameof(TestData))]
     public void SumArithmeticRange(long min, long max, long step, long expectedSum) =>
-      Assert.Equal(expectedSum, Problem1Answer.SumArithmeticRange(min, max, step));
+      Assert.Equal(expectedSum, Problem1Answer.SumArithmeticRange(step, min, max));
 
     public static IEnumerable<object[]> TestData() =>
       _TestData_Raw().Select(x => new object[] { x.Min, x.Max, x.Step, x.Sum });
