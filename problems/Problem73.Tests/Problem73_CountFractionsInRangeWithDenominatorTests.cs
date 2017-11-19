@@ -17,6 +17,11 @@ namespace Problem1.Tests {
       yield return (1, 0);
       yield return (2, 0);
       yield return (3, 0);
+      yield return (4, 0);
+      yield return (5, 1);
+      yield return (6, 0);
+      yield return (7, 1);
+      yield return (8, 1);
     }
 
   }
