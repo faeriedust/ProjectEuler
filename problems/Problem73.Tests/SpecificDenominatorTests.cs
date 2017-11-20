@@ -4,7 +4,7 @@ using System.Linq;
 using Xunit;
 
 namespace Problem1.Tests {
-  public class Problem73_SpecificDenominatorTests {
+  public class SpecificDenominatorTests {
     [Theory, MemberData(nameof(TestData))]
     public void CountFractionsInRange(long denominator, long expectedFractionCount) =>
       Assert.Equal(
