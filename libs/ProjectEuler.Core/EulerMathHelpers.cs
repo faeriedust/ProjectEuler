@@ -26,11 +26,5 @@ namespace ProjectEuler.Core {
     public static long DivideByRoundDown(this long numerator, long denominator) =>
       numerator / denominator;
 
-    public static long FindNearestMultipleBoundedBelowBy(long step, long target) =>
-      target.DivideByRoundUp(step) * step;
-
-    public static long FindNearestMultipleBoundedAboveBy(long step, long target) =>
-      target.DivideByRoundDown(step) * step;
-
   }
 }
