@@ -26,7 +26,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem73.Answer", "problem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem73.Tests", "problems\Problem73.Tests\Problem73.Tests.csproj", "{76D96CF0-C822-4C99-A9B4-860397AC41C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Core.Tests", "problems\ProjectEuler.Core.Tests\ProjectEuler.Core.Tests.csproj", "{F0FB4801-3BD9-4252-B150-2BD76416785B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectEuler.Core.Tests", "problems\ProjectEuler.Core.Tests\ProjectEuler.Core.Tests.csproj", "{F0FB4801-3BD9-4252-B150-2BD76416785B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problem72", "Problem72", "{75B23B4E-D828-483F-898C-C0CFEE1C35DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem72.Answer", "problems\Problem72.Answer\Problem72.Answer.csproj", "{9210137D-FB37-41B5-B670-FD5D66C8262A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem72.Tests", "problems\Problem72.Tests\Problem72.Tests.csproj", "{4C711627-F856-4DE9-9047-27B61E2191A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +64,14 @@ Global
 		{F0FB4801-3BD9-4252-B150-2BD76416785B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0FB4801-3BD9-4252-B150-2BD76416785B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0FB4801-3BD9-4252-B150-2BD76416785B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9210137D-FB37-41B5-B670-FD5D66C8262A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9210137D-FB37-41B5-B670-FD5D66C8262A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9210137D-FB37-41B5-B670-FD5D66C8262A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9210137D-FB37-41B5-B670-FD5D66C8262A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C711627-F856-4DE9-9047-27B61E2191A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C711627-F856-4DE9-9047-27B61E2191A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C711627-F856-4DE9-9047-27B61E2191A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C711627-F856-4DE9-9047-27B61E2191A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +85,9 @@ Global
 		{4560F788-09BF-487E-8D4B-D325BFF2E871} = {8FD116BE-1023-449F-95A3-4F92C921637D}
 		{76D96CF0-C822-4C99-A9B4-860397AC41C1} = {8FD116BE-1023-449F-95A3-4F92C921637D}
 		{F0FB4801-3BD9-4252-B150-2BD76416785B} = {68289763-8F7A-4DAB-BA1C-BA4332E939CF}
+		{75B23B4E-D828-483F-898C-C0CFEE1C35DA} = {8E9DC8F6-AE67-4098-95E6-C60F8E6FA7E1}
+		{9210137D-FB37-41B5-B670-FD5D66C8262A} = {75B23B4E-D828-483F-898C-C0CFEE1C35DA}
+		{4C711627-F856-4DE9-9047-27B61E2191A6} = {75B23B4E-D828-483F-898C-C0CFEE1C35DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C483EA7C-FD37-466D-A449-3BD27B12B53A}
